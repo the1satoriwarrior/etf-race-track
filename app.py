@@ -13,8 +13,8 @@ import pytz
 st.set_page_config(page_title="Live ETF Race Track", layout="wide")
 st.title("🏇 Live ETF Intraday Race Track")
 
-TICKERS = ['SPY', 'QQQ', 'SCHD', 'DGRO', 'IWM']
-REFRESH_SECONDS = 15          # how often the page reruns
+TICKERS = ['VV', 'VOOV', 'VONV', 'VTI', 'SCHB', 'RWL', 'ALVL', 'EQWL', 'GSEW', 'EQAL', 'RSP', 'EUSA']
+REFRESH_SECONDS = 15          # how often the page reruns 
 CACHE_TTL = 10                # how often new data is actually fetched
 LAP_SCALE = 3.0               # % gain that equals one full lap around the track
 TRACK_RX, TRACK_RY = 300, 180 # oval track radii
@@ -22,7 +22,7 @@ TRACK_RX, TRACK_RY = 300, 180 # oval track radii
 EASTERN = pytz.timezone("US/Eastern")
 
 
-def market_is_open() -> bool:
+def market_is_open() -> bool: 
     now = datetime.now(EASTERN)
     if now.weekday() >= 5:
         return False
