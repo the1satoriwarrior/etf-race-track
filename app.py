@@ -13,7 +13,7 @@ import pytz
 st.set_page_config(page_title="Live ETF Race Track", layout="wide")
 st.title("🏇 Live ETF Intraday Race Track")
 
-TICKERS = ['VV', 'VOOV', 'VONV', 'VTI', 'SCHB', 'RWL', 'AVLV', 'EQWL', 'GSEW', 'EQAL', 'RSP', 'EUSA']
+TICKERS = ['VV', 'VOOV', 'VONV', 'VTI', 'SCHB', 'RWL', 'AVLV', 'EQWL', 'GSEW', 'EQAL', 'RSP', 'EUSA' 'BKLC']
 REFRESH_SECONDS = 15          # how often the page reruns 
 CACHE_TTL = 10                # how often new data is actually fetched
 LAP_SCALE = 3.0               # % gain that equals one full lap around the track
